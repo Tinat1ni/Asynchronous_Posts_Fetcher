@@ -1,7 +1,6 @@
 import asyncio
 import aiohttp
 import json
-import time
 
 
 async def get_post(post_id):
@@ -23,8 +22,6 @@ async def main():
 
 
 if __name__ == '__main__':
-    start = time.time()
     asyncio.run(main())
-    end = time.time()
-    print(end - start)
+
 
